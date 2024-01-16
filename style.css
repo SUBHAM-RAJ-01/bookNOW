@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("maldives.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+div.navbar {
+    padding-left: 30px;
+    padding-top: 30px;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+
+label.logo {
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+div.navbar ul {
+    margin-top: 2rem;
+    float: right;
+    margin-right: 2rem;
+}
+
+div.navbar ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+a {
+    color: black;
+    font-size: 30;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+a:hover {
+    color: orange;
+}
+
+a:focus {
+    color: aqua;
+    transition: 0.5;
+}
+
+div.widget {
+    margin-top: 3rem;
+    padding: 2rem;
+    float: right;
+}
+
+div.slider {
+    position: relative;
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+div.image {
+    aspect-ratio: 16/9;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem rgba(0, 0, 0, 1);
+    border-radius: 15px;
+}
+
+div.image img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+div.slidernav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+div.slidernav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: white;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+div.slidernav a:hover {
+    background-color: rgb(4, 4, 4);
+}
+
+div.left img {
+    height: 300px;
+    width: 1000px;
+    float: left;
+}
+
+.container {
+    position: relative;
+}
+
+.container .wrapper {
+    width: 70vw;
+    height: 40vh;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    margin: 2rem 2rem 2rem;
+    overflow: hidden;
+    border-radius: 8px;
+    float: left;
+}
+
+.container .wrapper-holder {
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 15s ease-in-out infinite alternate;
+}
+
+.container #Munnar-Kerala {
+    background-image: url(Munnar-Kerala.jpg);
+    background-position: center;
+}
+
+.container #Rajasthan {
+    background-image: url(Rajasthan.jpg);
+    background-position: center;
+}
+
+.container #Ladakh-winter {
+    background-image: url(Ladakh-winter.jpg);
+    background-position: center;
+}
+
+.container #dal-lake {
+    background-image: url(dal-lake.jpg);
+    background-position: center;
+}
+
+.container .button-holder .button {
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+}
+
+.container .button-holder {
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 7px 4px rgba(0, 255, 255, 0.6);
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0%);
+    }
+    10% {
+        transform: translateX(-100%);
+    }
+    20% {
+        transform: translateX(-100%);
+    }
+    30% {
+        transform: translateX(-200%);
+    }
+    40% {
+        transform: translateX(-200%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    70% {
+        transform: translateX(-300%);
+    }
+    80% {
+        transform: translateX(-300%);
+    }
+    90% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.home2 {
+    background-color: aliceblue;
+}
+
+.star-rating {
+    display: inline-block;
+    font-size: 0;
+    position: absolute;
+    margin-top: 40%;
+    margin-left: -27%;
+    background-color: aliceblue;
+    margin-bottom: 10%;
+    padding-bottom: 100px;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 24px;
+    color: #100f0f;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.star-rating label:before {
+    content: '\2605';
+}
+
+.star-rating input[type="radio"]:checked~label {
+    color: #fdd835;
+}

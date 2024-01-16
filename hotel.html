@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookNOW/Hotel</title>
+    <link rel="stylesheet" href="hotel.css" type="text/css">
+</head>
+
+<body>
+    <div class="navbar">
+        <label class="logo">BOOKnow.com</label>
+        <ul>
+            <li><a class="active" href="index.html" target="Home">HOME</a></li>
+            <li><a class="active" href="about.html">ABOUT</a></li>
+            <li><a class="active" href="hotel.html">HOTEL</a></li>
+            <li><a class="active" href="flight.html">FLIGHT</a></li>
+            <li><a class="active" href="login.html" target="main.html">LOGIN</a></li>
+            <li><a class="active" href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="flightform">
+
+        <p class="flight">Search Hotel</p>
+
+        <form method="post">
+
+            <div class="flightinfo">
+                <label>City</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" placeholder="City of Stay" class="fromto" id="datalist" list="datalistOption" required>
+
+                <datalist id="datalistOption">
+                <option>Delhi</option>
+                <option>Bengaluru</option>
+                <option>Mumbai</option>
+                <option>Hydrabad</option>
+                <option>Patna</option>
+                <option>Ranchi</option>
+                <option>Jaipur</option>
+                <option>Ahemdabad</option>
+                <option>Chandigadh</option>
+                <option>Srinagar</option>
+                <option>Chennai</option>
+                <option>Kocchi</option>
+                <option>Gangtok</option>
+                <option>Guwahati</option>
+                <option>Bhopal</option>
+                <option>Bhuvneshwar</option>
+                <option>Goa</option>
+                
+            </datalist><br>
+                <label>Check-In</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="date" placeholder="" class="fromto" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label>Check-Out</label>
+                <input type="date" placeholder="" class="fromto" required> <br>
+                <label>No of Rooms</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select class="fromto" required>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label>Stars</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select class="fromto">
+                    <option>1 Star</option>
+                    <option>2 Star</option>
+                    <option>3 Star</option>
+                    <option>4 Star</option>
+                    <option>5 Star</option>
+                </select>
+
+                <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio"><label>Hotel</label>
+                <input type="radio"><label>Resort</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label>Price Range</label>
+                <span class="sliderdiv">
+                    <label>&#8377;0</label>
+                    <input type="range" min="1000" max="10000" class="slider" onchange="fetch"></span>
+                <label>&#8377;<span class="value">10000</span></label>
+                <br>
+            </div>
+            <input type="button" value="Search" class="search">
+
+        </form>
+    </div>
+    <script>
+        const slider = document.querySelector(".slider");
+        const value = document.querySelector(".value");
+        value.textContent = slider.value;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forgot</title>
+    <link rel="stylesheet" href="forgot.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="Forgot">
+            <br><label class="header">Forgot password</label>
+            <form>
+                <input type="text" placeholder="Enter your email"><br>
+                <input type="button" onclick="getOtp()" class="button" value="Get OTP">
+                <br>
+                <input type="password" placeholder="Enter OTP" maxlength="6"><br>
+                <a href="#">Resend OTP</a><br>
+                <input type="password" class="password" placeholder="Enter New Password"><br>
+                <input type="password" class="password" placeholder="Confirm New Password"><br>
+                <input type="button" class="sub" onclick="passSubmit()" value="Change Password">
+            </form>
+        </div>
+    </div>
+    <script>
+        function getOtp() {
+            alert("OTP sent");
+        }
+
+        function passSubmit() {
+            alert("Password Changed Succesfully");
+        }
+    </script>
+</body>
+
+</html>

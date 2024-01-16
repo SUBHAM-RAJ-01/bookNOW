@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookNOW/Flight</title>
+    <link rel="stylesheet" href="flight.css" type="text/css">
+</head>
+
+<body>
+    <div class="navbar">
+        <label class="logo">BOOKnow.com</label>
+        <ul>
+            <li><a class="active" href="index.html" target="Home">HOME</a></li>
+            <li><a class="active" href="about.html">ABOUT</a></li>
+            <li><a class="active" href="hotel.html">HOTEL</a></li>
+            <li><a class="active" href="flight.html">FLIGHT</a></li>
+            <li><a class="active" href="login.html" target="main.html">LOGIN</a></li>
+            <li><a class="active" href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="flightform">
+
+        <p class="flight">Search Flight</p>
+
+        <form method="post">
+            <input type="button" class="way" value="One-Way">
+            <input type="button" class="way1" value="Round-Ttip"> <br>
+            <div class="flightinfo">
+                <label>Boarding City</label>&nbsp;&nbsp;
+                <input type="text" placeholder="From" class="fromto" id="datalist" list="datalistOption">
+                <label>Destination City</label>
+                <input type="text" placeholder="To" class="fromto" id="datalist" list="datalistOption">
+                <datalist id="datalistOption">
+                <option>Delhi</option>
+                <option>Bengaluru</option>
+                <option>Mumbai</option>
+                <option>Hydrabad</option>
+                <option>Patna</option>
+                <option>Ranchi</option>
+                <option>Jaipur</option>
+                <option>Ahemdabad</option>
+                <option>Chandigadh</option>
+                <option>Srinagar</option>
+                <option>Chennai</option>
+                <option>Kocchi</option>
+                <option>Gangtok</option>
+                <option>Guwahati</option>
+                <option>Bhopal</option>
+                <option>Bhuvneshwar</option>
+                
+            </datalist><br>
+                <label>Boarding Date</label>
+                <input type="date" placeholder="Date" class="fromto"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label>Passengers</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" placeholder="No. of Passangers" class="fromto1"><br>
+                <label>Class</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" placeholder="Class" class="fromto" id="datalist" list="datalist1Option">
+                <datalist id="datalist1Option">
+                    
+                <option> ECONOMY</option>
+                <option> PREMIUM ECONOMY</option>
+                <option> BUSINESS </option>
+                <option> FIRST CLASS</option>
+            </datalist>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio"><label>Student</label>
+                <input type="radio"><label>Senior Citizen</label>
+                <input type="radio"><label>Armed Forces</label>
+                <br> </div>
+            <input type="button" value="Search" class="search">
+
+        </form>
+    </div>
+</body>
+
+</html>

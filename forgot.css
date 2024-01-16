@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-position: 0px 0px;
+    background: url(maldives.jpg);
+    background-size: 100%;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+label.header {
+    font-size: 1.8rem;
+    margin-left: 5.5rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+    margin-bottom: 1.3rem;
+    margin-top: 3rem;
+}
+
+form input {
+    margin-top: 1.5rem;
+    height: 40px;
+    width: 80%%;
+    padding: 0 px;
+    font-size: 17px;
+    margin-left: 2.4rem;
+    border: 1px solid #ddd;
+    box-shadow: rgb(14, 13, 13);
+    border-radius: 6px;
+    outline: none;
+}
+
+form input.sub {
+    margin-bottom: 1.5rem;
+}
+
+form input.button {
+    color: #fff;
+    background: #70ec17;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 1.7rem;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-left: 10rem;
+}
+
+a {
+    margin-top: 2rem;
+    margin-left: 10rem;
+}
+
+a:hover {
+    transition: 0.5;
+    color: red;
+}
+
+form input.sub {
+    color: #fff;
+    background: #70ec17;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 1.7rem;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-left: 7rem;
+}
+
+form input.sub:hover {
+    transition: 0.5;
+    background: rgb(12, 209, 231);
+}
+
+form input.button:hover {
+    transition: 0.5;
+    background: rgb(12, 209, 231);
+}

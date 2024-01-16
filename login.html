@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="log2.css" />
+    <title>BookNow/Login</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <label class="logo">BOOKnow.com</label>
+        <ul>
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a class="active" href="about.html">ABOUT</a></li>
+            <li><a class="active" href="hotel.html">HOTEL</a></li>
+            <li><a class="active" href="flight.html">FLIGHT</a></li>
+            <li><a class="active" href="login.html" target="Home">LOGIN</a></li>
+            <li><a class="active" href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="login form">
+            <form id="form" action="login.php">
+                <header>Login</header>
+
+                <div class="form-control">
+                    <input type="text" id="email" placeholder="Enter your Email">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <input type="password" id="password" placeholder="Enter Password">
+                    <small>Error Message</small>
+                </div>
+                <a class="forget" href="forgot.html" target="login.html">Forgot password?</a>
+
+                <button onclick="valid">Login</button>
+
+                <div class="signup">
+                    <span class="signup">Don't have an account?
+             <label for="check"><a href="signup.html">Signup</a></label>
+            </span>
+            </form>
+
+            </div>
+            </form>
+        </div>
+
+        <div class="line">
+        </div><br>
+        <div class="icon">
+            <a href="" class="logfacebook">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <span>Login with Facebook</span></a>
+            <br><br>
+            <a href="" class="loggoogle">
+                <ion-icon name="logo-google"></ion-icon>
+                <span>Login with Google</span></a>
+
+
+        </div>
+    </div>
+    </div>
+    <br>
+    <br><br>
+
+
+    <script src="script2.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>

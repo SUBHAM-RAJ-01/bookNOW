@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
+    <title>BookNow/Signup</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <label class="logo">BOOKnow.com</label>
+        <ul>
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a class="active" href="about.html">ABOUT</a></li>
+            <li><a class="active" href="hotel.html">HOTEL</a></li>
+            <li><a class="active" href="flight.html">FLIGHT</a></li>
+            <li><a class="active" href="login.html" target="Home">LOGIN</a></li>
+            <li><a class="active" href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="login form">
+
+            <form id="form" action="#">
+
+                <header>Signup</header>
+                <div class="form-control">
+                    <input type="text" id="Username" placeholder="Enter Username">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <input type="text" id="Email" placeholder="Enter your Email">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <input type="Password" id="password" placeholder="Enter Password">
+                    <small>Error Message</small>
+                </div>
+                <div class="form-control">
+                    <input type="password" id="confirm" placeholder="Confirm Password" />
+                    <small>Error Message</small>
+                </div>
+                <button onclick="valid">Signup</button>
+
+                <div class="signup">
+                    <span class="signup">Already have an account?
+         <label for="check"><a href="login.html">Login</a></label>
+        </span>
+                </div>
+
+
+            </form>
+            <script src="script.js"></script>
+            <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>

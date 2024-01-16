@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="contact.css" </head>
+
+    <body>
+        <div class="navbar">
+            <label class="logo">BOOKnow.com</label>
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a class="active" href="about.html">ABOUT</a></li>
+                <li><a class="active" href="hotel.html">HOTEL</a></li>
+                <li><a class="active" href="home.html">FLIGHT</a></li>
+                <li><a class="active" href="login.html" target="main.html">LOGIN</a></li>
+                <li><a class="active" href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="contact_sec">
+                <h2>Contact</h2>
+                <form method="POST">
+
+                    <input type="text" id="name" class="data" required placeholder="NAME"><br>
+
+
+                    <input type="email" id="email" class="data" required placeholder="Email"><br>
+
+                    <span><label>Issue :</label>
+                    <select>
+                        <option>-Select-</option><option>Booking</option>
+                        <option>Payment</option>
+                        <option>Cancellation</option>
+                        <option>Refund</option>
+                        <option>Other</option>
+                    </select></span><br>
+
+                    <br>
+                    <textarea id="message" class="message" rows="4" required placeholder="Please specify the issue"></textarea><br>
+
+                    <input type="submit" onclick="submitMsg()" value="SUBMIT" class="submit">
+                </form>
+                <br>
+            </div>
+            <div class="icon">
+                <ul>
+                    <li>
+                        <a href="" class="logfacebook">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="" class="logwhatsapp">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li></li>
+                    <a href="" class="logwhatsapp">
+                        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                    </a>
+                    </li>
+                    <li></li>
+                    <a href="" class="logwhatsapp">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+
+        <footer>
+
+            <p>&copy; 2023_bookNOW.com &nbsp;All rights reserved.</p>
+
+        </footer>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <script>
+            function submitMsg() {
+                alert("Your response has been recorded");
+            }
+        </script>
+    </body>
+
+</html>
